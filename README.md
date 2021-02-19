@@ -44,5 +44,53 @@ We will be evaluating
 
 #### Test Cases
 
- 1.  
+Functional Testcases:  
+1. To verify whether user is able to place Pizza order with all the details  
+2. To verify Success pop up after entering all details and clicking PlaceOrder button  
+3. To verify Reset button functionality to clear the data entered  
+4. To verify maximum and minimum length of name,Email and phone fields
+5. To verify mandatory message or pop up is displayed if user clicks Place Order button without entering Name and Phone fields
+6. To check for invalid details in Name,Email and Phone fields
+7. To verify Cost is updated according to quantity and pizza type entered by user
+8. To verify Cost field is in disabled mode
+9. To verify if the user selects 1 radio button in Payment Information then other should be in disbaled mode
+10. To verify user should be able to change or toggle between 2 radio buttons in Payment Information
+11. To verify the text in success popup is displayed correctly
+12. To verify the close button functionality of success message poup
+13. To verify the Total amount on the popup displayed is same as cost
+14. To verify maximum and minimum length of Quantity field
+15. To verify the Pop up message if the user doesn't enter any data and clicks Place Order button
+16. To verify that the user cannot enter any data or click any button untill the pop up is closed
+17. To check if the email id entered is valid or not
+18. To verify the user data is not cleared off after page refresh
+
+
+UI/Non functional testcases:
+
+1.To verify the order form for Cross browser testing  
+2.To verify the Place Order and Reset buttons are blue in colour  
+3.To verify dropdowns closes after selecting the values  
+4.To verify the * symbol for Name and Phone fields  
+5.To verify the alignment and borders of the page  
+6.To verify if the title is dispalyed in the center  
+7.To verify if the page is scrollable
+
+Performance/Load testcases:
+
+1.To verify page load time for single order  
+2.To verify page with continuous orders and check for load testing
+
+
+Boundary testcases:
+1.Enter string,numeric and special characters in Quantity, name, email and phone number fields  
+2.Invalid credit card information or phone number is entered
+
+Defects in the page:
+
+1. On clicking Reset button all the data enetered is not resetted
+2. Toppings dropdowns are enabled even if the pizza type is not selected
+3. Able to select both radio buttons at a time in Payment Information Section
+4. Able to place order even if the pizza type is not selected
+5. Unable to enter credit card details
+  
 
