@@ -81,7 +81,8 @@ Performance/Load testcases:
 2.To verify page with continuous orders and check for load testing
 
 
-Boundary testcases:
+Boundary testcases:  
+
 1.Enter string,numeric and special characters in Quantity, name, email and phone number fields  
 2.Invalid credit card information or phone number is entered
 
