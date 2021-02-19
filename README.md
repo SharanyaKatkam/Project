@@ -92,5 +92,4 @@ Defects in the page:
 3. Able to select both radio buttons at a time in Payment Information Section
 4. Able to place order even if the pizza type is not selected
 5. Unable to enter credit card details
-  
 
