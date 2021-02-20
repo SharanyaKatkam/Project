@@ -54,7 +54,7 @@ public class OrderPage {
     @FindBy(xpath = "//button[@class = 'ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close']")
     WebElement closeBtn;
 
-    //Intializing the elements
+    //Initializing the elements
     public OrderPage()
     {
         PageFactory.initElements(driver,this);
@@ -106,13 +106,13 @@ public class OrderPage {
        placeOrderBtn.click();
     }
 
-    public void VerifyPopUpMsg()
+    public void verifyPopUpMsg()
     {
         String msg = "Thank you for your order!"  ;
         Assert.assertTrue(popup.getText().contains(msg));
     }
 
-    public void  VerifyPopUp()
+    public void  verifyPopUp()
     {
         String msg1 = "Missing name";
         String text = "phone number";
@@ -121,7 +121,7 @@ public class OrderPage {
     }
 
     //Method to verify the fields resetted on clicking Reset button
-    public boolean VerifyResetBtnFunctionality()
+    public boolean verifyResetBtnFunctionality()
     {
           List<WebElement> myFields = driver.findElements(By.xpath("//input"));
             for(WebElement element:myFields)

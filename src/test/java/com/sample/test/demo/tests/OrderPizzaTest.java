@@ -4,12 +4,8 @@ import com.sample.test.demo.OrderPage;
 import com.sample.test.demo.constants.PizzaToppings;
 import com.sample.test.demo.constants.PizzaTypes;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import com.sample.test.demo.TestBase;
 
@@ -31,7 +27,7 @@ public class OrderPizzaTest extends TestBase {
 
   //happy path testcase to place an order
     @Test(priority = 1)
-    public  void  OrderingPizza()
+    public  void  orderingPizza()
     {
         op = new OrderPage();
         //verifying page title
@@ -47,14 +43,14 @@ public class OrderPizzaTest extends TestBase {
         op.clickOrderButton();
 
         //verifying success msg
-        op.VerifyPopUpMsg();
+        op.verifyPopUpMsg();
         op.clickCloseButton();
 
     }
 
     //happy path testcase to enter details and click reset
     @Test(priority = 2)
-    public void EnterValuesAndClickResetBtn()
+    public void enterValuesAndClickResetBtn()
     {
         op = new OrderPage();
 
@@ -69,7 +65,7 @@ public class OrderPizzaTest extends TestBase {
 
     //error case which checks for mandatory fields messages
     @Test(priority = 3)
-    public void ClickPlaceOrderBtnWithoutEnteringDetails()
+    public void clickPlaceOrderBtnWithoutEnteringDetails()
     {
         op = new OrderPage();
 
@@ -77,7 +73,7 @@ public class OrderPizzaTest extends TestBase {
         op.clickOrderButton();
 
         //verifying error messages on the pop up
-        op.VerifyPopUp();
+        op.verifyPopUp();
 
         //clicking close button on popup
         op.clickCloseButton();
